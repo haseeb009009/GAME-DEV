@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter</title>
+    <style>
+        body { text-align: center; background: black; margin: 0; }
+        canvas { 
+            background: url('./Assets/space-bg.jpg'); 
+            display: block; 
+            margin: auto; 
+            opacity: 0; /* Start hidden */
+            transition: opacity 2s ease-in; /* Smooth fade-in */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const canvas = document.getElementById("gameCanvas");
+            
+            // Delay then fade in
+            setTimeout(() => {
+                canvas.style.opacity = "1";
+                setTimeout(startGame, 1000); // Start game after fade-in
+            }, 1000);
+        });
+
+        function startGame() {
+            console.log("Game Started!");
+            // Add your game initialization code here if needed
+        }
+    </script>
+</body>
+</html>
