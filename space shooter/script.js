@@ -113,8 +113,8 @@ function drawBullets() {
 }
 
 // Create Enemies
-let enemySpeed = 2; // Initial enemy speed
-let speedIncrement = 0.5; // How much speed increases over time
+let enemySpeed = 0.5; // Initial enemy speed
+let speedIncrement = 0.1; // How much speed increases over time
 
 // Create Enemies
 function spawnEnemy() {
@@ -137,12 +137,12 @@ function enemyShoot() {
                 width: 5,
                 height: 10,
                 color: "white",
-                speed: 100
+                speed: 5
             });
         }
     });
 }
-setInterval(enemyShoot, 500); // Enemies shoot every second
+setInterval(enemyShoot, 1000); // Enemies shoot every second
 
 // Draw Enemies & Check Collisions
 function drawEnemies() {
