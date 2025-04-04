@@ -3,22 +3,21 @@ body {
     text-align: center;
     background: #111;
     color: white;
-  }
-  
-  #game {
+}
+
+#game {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
     margin-top: 20px;
-  }
-  
-  canvas {
+}
+
+canvas {
     background: #222;
     border: 2px solid #555;
-  }
-  
-  .info {
+}
+
+.info {
     text-align: left;
-  }
-  
+}
